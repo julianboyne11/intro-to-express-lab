@@ -7,6 +7,15 @@
   <title>Students</title>
 </head>
 <body>
-  
+  <h1>Student list</h1>
+  <ul>
+    <% students.forEach(student => { %>
+      <li>
+        <%= student.name %>
+        :
+        <%= student.passed ? "test passed" : "test not passed" %>
+      </li>
+    <% }) %> 
+  </ul>
 </body>
 </html>
